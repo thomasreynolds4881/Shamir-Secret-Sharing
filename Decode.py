@@ -16,8 +16,6 @@ def main():
 	    x.append(int(row[0]))
 	    y.append(int(row[1]))
 	fi.close()
-	print(x)
-	print(y)
 	yint = findYint(x,y)
 	pword = asciiToString(str(yint))
 
