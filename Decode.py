@@ -1,5 +1,8 @@
+from fractions import Fraction
+
 def findYint(x,y):
-	slope = (y[1] - y[0]) / (x[1] - x[0])
+	#slope = (y[1] - y[0]) / (x[1] - x[0])
+	slope = Fraction(y[1] - y[0], x[1] - x[0])
 	yint = int(y[0] - slope * x[0])
 	return yint
 
